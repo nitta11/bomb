@@ -26,17 +26,31 @@
 	  var t =displaynum(count);
  	  var a=String(count);
 	  display(t);
-	  var id=setTimeout(countdown,1000);
-	  if(count==0) clearTimeout(id);
-	  count--;
+		var id=setTimeout(countdown,1000);
+		if(count==0){
+			clearTimeout(id);
+			var explo =document.getElementById("explo");
+			explo.play();
+			
+		}
+			  count--;
 
 	}
  	var start =function(btn){
 		btn.disabled=true;
 		countdown();
 	}
-var count = prompt("秒数を入力してください");
-	if(count>0){
+var count = parseInt(prompt("秒数を入力してください"));
+
+//status表示
+var status = document.getElementById("status");
+status.src="status/lock.png";
+
+if(count<6000 && count>0){
 		var t=displaynum(count);
-		display(t);
-	}
+        display(t);
+}else{
+ var count=0;
+	var t=displaynum(count);
+    display(t);
+}
