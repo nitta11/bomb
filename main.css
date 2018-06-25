@@ -1,8 +1,14 @@
+button{
+	outline: none;
+}
+
 body {
 background-color: #171f18;
 }
 
-p {text-align:center}
+p{
+	text-align: center;
+}
 
 input[type="button"][disabled]{
 	border: solid 0px #fff;
@@ -13,7 +19,53 @@ video{
 	width: 600px;
 	max-width: 100%;
 }
+
 	
 status{
+	display: block; 
 	float: left;
+}
+
+.pas{ 
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0px 5px 0px; 
+}
+
+
+pass{
+	display: block; 
+	margin-left : auto ;
+	margin-right : auto ;
+	float: left;
+	background-color: rgba(0,255,0,0.1);
+	border-radius: 5px;
+	line-height: 0;
+	padding: 10px;
+	height: 450px;
+	text-align: left;
+}
+
+.passb{
+	width: 120px;
+	height: 80px;
+	vertical-align: middle;
+	border-top : solid 3px #069408; 
+    border-right: solid 5px #171; 
+    border-bottom: solid 5px #000000;
+    border-left: solid 5px #171;
+}
+
+.passb:active {
+	border-top : solid 5px #069408; 
+    border-right: solid 7px #171; 
+    border-bottom: solid 7px #000000;
+    border-left: solid 7px #171;
+
+}
+
+pab{
+	display: block;
+    padding: 20px 0px 0px 300px;
+	
 }

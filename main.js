@@ -40,6 +40,17 @@
 		btn.disabled=true;
 		countdown();
 	}
+
+//password入力部分
+		var pass4 = document.getElementById("pass4");
+	    pass4.src="pass/null.png";
+	    var pass3 = document.getElementById("pass3");
+	    pass3.src="pass/null.png";
+	    var pass2 = document.getElementById("pass2");
+	    pass2.src="pass/null.png";
+	    var pass1 = document.getElementById("pass1");
+	    pass1.src="pass/null.png";
+
 var count = parseInt(prompt("秒数を入力してください"));
 
 //status表示
