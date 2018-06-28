@@ -40,9 +40,6 @@ var countdown = function(){
 			clearTimeout(timerid);
 			return;
 		}  */
-	if(success==0){
-		count--;
-	}
 	
 	if(count==0){
 			clearTimeout(timerid);
@@ -53,6 +50,7 @@ var countdown = function(){
 			clearTimeout(timerid);
 		
 		}
+	count--;
 	
 }
 
